@@ -1,0 +1,119 @@
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+.gradient_h{
+    background: linear-gradient(to right,#FF3BFF, #ECBFBF, #5C24FF, #D94FD5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient_h2{
+    background: linear-gradient(90deg, #4E4BE4 1.04%, #E862FE 100%);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+  }
+  .shad{
+    width: 80%;
+  }
+  .box_b{
+    border-radius: 16px;
+background: #181924;
+width: fit-content;
+  }
+
+  
+  .colbo{
+    border: '2px white solid';
+    background-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
+
+    /* box-shadow:
+    inset 0 0 0 2px rgb(232, 98, 254, 0.7),
+    inset 0 2px 0 0 rgb(117, 52, 255,0.7), 
+    inset 0 0 0 3px rgb(255, 255, 255,0.7), 
+    inset 2px 0 0 0 orange;  */
+
+  }
+.container {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.box {
+  background-color: rgba(24, 25, 36, 1);
+  padding: 30px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  z-index: 1
+}
+
+.box3 {
+  grid-column: span 2;
+  width: 70%;
+  margin:auto;
+
+}
+p{
+  z-index:2;
+}
+.box::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  height: 150px;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/framegrid.png");
+}
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .box3 {
+    max-width: 100%; 
+    margin: 0;
+    grid-column-start: unset;
+    grid-column-end: unset;
+  }
+
+  .box::before {
+    width: 200px;
+  height: 100px;
+  }
+}
+
+font_22{
+  font-size: 22px;
+}
+.track_07{
+  letter-spacing: -0.72px;
+}
+/* styles.css */
+/* styles.css */
+.form {
+  position: relative;
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #FF3BFF, #ECBFBF, #5C24FF, #D94FD5);
+  border-image-slice: 1;
+}
+/* styles.css */
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #FF3BFF, #ECBFBF, #5C24FF, #D94FD5);
+}

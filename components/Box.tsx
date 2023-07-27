@@ -1,0 +1,15 @@
+import React from 'react';
+import Image from 'next/image';
+
+function Box({ imageSrc, text }) {
+  return (
+    <div>
+      <div className='flex items-center p-4 w-96'>
+        <Image src={imageSrc} alt="" width={50} height={50} />
+        <p className="ml-4">{text}</p>
+      </div>
+    </div>
+  );
+}
+
+export default Box;
