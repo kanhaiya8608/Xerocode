@@ -1,6 +1,12 @@
 // pages/api/subscribe.ts
 import { NextApiRequest, NextApiResponse } from 'next';
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+dotenv.config();
+
+if (!process.env.MONGODB_URI) {
+  throw new Error('MONGODB_URI environment variable is not defined.');
+}
 
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
