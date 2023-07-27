@@ -65,7 +65,7 @@ const MovingDiv = () => {
         },
       }}
     >
-     <p className='text-3xl tracking-wider leading-normal p-4'> {text}</p>
+     <p className='text-3xl tracking-wider leading-normal p-4 sm:p-6'> {text}</p>
     </motion.div>
     </div>
   );
