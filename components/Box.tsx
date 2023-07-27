@@ -1,7 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 
-function Box({ imageSrc, text }) {
+interface BoxProps {
+  imageSrc: string; 
+  text: string;
+}
+
+function Box({ imageSrc, text }: BoxProps) {
   return (
     <div>
       <div className='flex items-center p-4 w-96'>
