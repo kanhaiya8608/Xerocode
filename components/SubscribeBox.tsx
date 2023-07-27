@@ -59,11 +59,11 @@ const SubscribeBox = () => {
   };
 
   return (
-    <div className=' flex flex-col justify-center items-center  text-center p-4'>
+    <div className=' flex flex-col justify-center items-center  text-center sm:p-4'>
        <div className=" rounded-full bg-gradient-to-r p-[2px] bg-gradient-to-r from-fuchsia-500 via-red-200 to-fuchsia-500 overflow-hidden">
        <div className=" bg-gradient-to-r flex flex-col justify-between h-full bg-black rounded-lg ">
       <form className='flex flex-row shadow-m bg-black rounded-full  p-2' onSubmit={handleSubmit}>
-        <input className='text-lg bg-transparent py-2 focus:outline-none focus:border-blue-500 sm:pr-20'
+        <input className='text-lg bg-transparent py-2 focus:outline-none focus:border-blue-500 pr-2  sm:pr-20 w-11/12  sm:w-fit'
           type="email"
           placeholder="Your email"
           value={email}
